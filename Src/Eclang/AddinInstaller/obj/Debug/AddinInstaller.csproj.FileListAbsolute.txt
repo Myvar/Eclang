@@ -1,0 +1,8 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\AddinInstaller.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\AddinInstaller.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinInstaller\obj\Debug\AddinInstaller.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinInstaller\obj\Debug\AddinInstaller.MainForm.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinInstaller\obj\Debug\AddinInstaller.Properties.Resources.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinInstaller\obj\Debug\AddinInstaller.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinInstaller\obj\Debug\AddinInstaller.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinInstaller\obj\Debug\AddinInstaller.pdb

@@ -1,0 +1,22 @@
+﻿<addin>
+
+  <meta>
+    <author>Chris Anders</author>
+    <name>TestAddin</name>
+    <version>1.0.0.0</version>
+  </meta>
+
+  <extension path="/EcIDE/StartupCommands">
+    <command class="TestAddin.Startup" />
+
+    <seperator />
+  </extension>
+  <extension path="/EcIDE/Intellisense/Snippets">
+    <command class="TestAddin.Intellisense.Snippets.ForSnippet" />
+  </extension>
+  <extension path="/EcIDE/Intellisense/Commands">
+    <command class="TestAddin.Intellisense.Commands.GoToCommand" />
+    <command class="TestAddin.Intellisense.Commands.IsCommand" />
+  </extension>
+
+</addin>

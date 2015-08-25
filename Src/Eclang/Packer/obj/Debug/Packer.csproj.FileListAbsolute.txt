@@ -1,0 +1,10 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\bin\Debug\Packer.exe.config
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\bin\Debug\Packer.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\bin\Debug\Packer.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\obj\Debug\Packer.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\obj\Debug\Packer.Properties.Resources.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\obj\Debug\Packer.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\obj\Debug\Packer.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\obj\Debug\Packer.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\bin\Debug\ECLang.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Packer\bin\Debug\ECLang.pdb

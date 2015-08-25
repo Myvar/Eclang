@@ -1,0 +1,11 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\addins\MyvarEcAddin.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\addins\MyvarEcAddin.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\MyvarEcAddin\obj\Debug\MyvarEcAddin.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\MyvarEcAddin\obj\Debug\MyvarEcAddin.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\MyvarEcAddin\obj\Debug\MyvarEcAddin.pdb
+C:\Users\Emile\AppData\Roaming\EcIDE\addins\MyvarEcAddin.dll
+C:\Users\Emile\AppData\Roaming\EcIDE\addins\MyvarEcAddin.pdb
+C:\Users\Emile\AppData\Roaming\EcIDE\addins\MyvarEcAddin.dll.CodeAnalysisLog.xml
+C:\Users\Emile\AppData\Roaming\EcIDE\addins\MyvarEcAddin.dll.lastcodeanalysissucceeded
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\MyvarEcAddin\obj\Debug\MyvarEcAddin.UI.OptionPage.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\MyvarEcAddin\obj\Debug\MyvarEcAddin.csproj.GenerateResource.Cache

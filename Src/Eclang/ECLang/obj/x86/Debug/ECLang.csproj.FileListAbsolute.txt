@@ -1,0 +1,10 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\bin\Debug\ECLang.dll.config
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\bin\Debug\ECLang.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\bin\Debug\ECLang.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.Properties.Resources.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\bin\Debug\log4net.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\bin\Debug\SharpHsql.dll

@@ -1,0 +1,3 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\EcIDE.Contracts.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\FastColoredTextBox.dll

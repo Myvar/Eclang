@@ -1,0 +1,8 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\bin\Debug\AddinBuilder.GUI.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\bin\Debug\AddinBuilder.GUI.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\obj\Debug\AddinBuilder.GUI.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\obj\Debug\AddinBuilder.GUI.Form1.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\obj\Debug\AddinBuilder.GUI.Properties.Resources.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\obj\Debug\AddinBuilder.GUI.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\obj\Debug\AddinBuilder.GUI.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\AddinBuilder.GUI\obj\Debug\AddinBuilder.GUI.pdb

@@ -1,0 +1,43 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+        x:Class="EC_Studio.MainWindow"
+        Title="EC Studio" Height="350" Width="525" Icon="pack://application:,,,/EClang-logo-icon-largefilesize.ico" WindowState="Maximized"
+        Background="White" Topmost="True"
+    >
+    <Grid>
+        <Menu x:Name="MainMenu" VerticalAlignment="Top" Height="28" Background="Gray">
+            <MenuItem x:Name="MenuFile" Header="File" Height="28">
+                <MenuItem x:Name="MenuFileLoad" Header="Load" Height="28" />
+                <MenuItem x:Name="MenuFileLoadCompiled" Header="Load *.ecb" Height="28" />
+                <MenuItem x:Name="MenuFileSave" Header="Save" Height="28" />
+                <Separator />
+                <MenuItem x:Name="MenuFileExit" Header="Exit" Click="MenuFileExit_OnClick" Height="28" />
+            </MenuItem>
+            <MenuItem x:Name="MenuEdit" Header="Edit">
+                <MenuItem x:Name="MenuEditCut" Header="Cut" Height="28" />
+                <MenuItem x:Name="MenuEditCopy" Header="Copy" Height="28" />
+                <MenuItem x:Name="MenuEditPaste" Header="Paste" Height="28" />
+                <Separator />
+                <MenuItem x:Name="MenuEditFind" Header="Find" Height="28" />
+                <MenuItem x:Name="MenuEditReplace" Header="Replace" Height="28" />
+                <Separator />
+                <MenuItem x:Name="MenuEditGoTo" Header="GoTo" Height="28" />
+            </MenuItem>
+            <MenuItem x:Name="MenuDebug" Header="Debug">
+                <MenuItem x:Name="MenuDebugStart" Header="Start" Height="28" />
+                <MenuItem x:Name="MenuDebugStop" Header="Stop" Height="28" />
+            </MenuItem>
+            <MenuItem x:Name="MenuBuild" Header="Build" />
+            <MenuItem x:Name="MenuNotifications" Header="Notifications" />
+            <MenuItem x:Name="MenuExtras" Header="Extras">
+                <MenuItem x:Name="MenuExtrasOptions" Header="Options" Height="28" />
+                <MenuItem x:Name="MenuExtrasAddins" Header="Addins" Height="28">
+                    <MenuItem x:Name="MenuExtrasAddinsInstall" Header="Install" Height="28" />
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

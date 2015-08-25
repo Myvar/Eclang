@@ -1,0 +1,6 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Release\EcIDE.Contracts.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Release\EcIDE.Contracts.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Release\EcIDE.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Release\EcIDE.Contracts.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Release\EcIDE.Contracts.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Release\FastColoredTextBox.dll

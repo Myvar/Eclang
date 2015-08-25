@@ -1,0 +1,1 @@
+In your ide go to Extras->Addins->Install and select this file (remember to unzip it.)

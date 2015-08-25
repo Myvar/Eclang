@@ -1,0 +1,4 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.Properties.Resources.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\bin\Debug\ECLang.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\ECLang\obj\x86\Debug\ECLang.dll

@@ -1,0 +1,9 @@
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Lib\Lib.IO.Database\obj\Debug\Creek.IO.Database.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Lib\Build\Creek.IO.Database.dll
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Lib\Build\Creek.IO.Database.pdb
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Lib\Lib.IO.Database\obj\Debug\Creek.IO.Database.dll
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Lib\Lib.IO.Database\obj\Debug\Creek.IO.Database.pdb
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Creek\Build\Creek.IO.Database.pdb
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Creek\Creek.IO.Database\obj\Debug\Creek.IO.Database.pdb
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Creek\Build\Creek.IO.Database.dll
+C:\Users\Chris\Documents\Visual Studio 2010\Projects\Lib\Creek\Creek.IO.Database\obj\Debug\Creek.IO.Database.dll

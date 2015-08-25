@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RadDock Padding="0, 0, 0, 0" SplitterWidth="3" IsCleanUpTarget="True" Orientation="Horizontal" Text="radDock1" CausesValidation="False" BackColor="ControlLightLight" Font="Microsoft Sans Serif, 8.25pt" TabIndex="1" TabStop="False">
+  <SerializableAutoHideContainer>
+    <RightAutoHideGroups>
+      <Telerik.WinControls.UI.Docking.AutoHideGroup>
+        <Windows>
+          <Telerik.WinControls.UI.Docking.DockWindowPlaceholder DockWindowName="DocumentWindow" DockWindowText="Document" PreviousDockState="Docked" Location="0, 0" />
+        </Windows>
+      </Telerik.WinControls.UI.Docking.AutoHideGroup>
+      <Telerik.WinControls.UI.Docking.AutoHideGroup>
+        <Windows>
+          <Telerik.WinControls.UI.Docking.DockWindowPlaceholder DockWindowName="MapWindow" DockWindowText="Map" PreviousDockState="Docked" Location="0, 0" />
+        </Windows>
+      </Telerik.WinControls.UI.Docking.AutoHideGroup>
+    </RightAutoHideGroups>
+    <BottomAutoHideGroups>
+      <Telerik.WinControls.UI.Docking.AutoHideGroup>
+        <Windows>
+          <Telerik.WinControls.UI.Docking.DockWindowPlaceholder DockWindowName="errorsWindow" DockWindowText="Errors" PreviousDockState="Docked" Location="0, 0" />
+        </Windows>
+      </Telerik.WinControls.UI.Docking.AutoHideGroup>
+    </BottomAutoHideGroups>
+  </SerializableAutoHideContainer>
+  <Controls>
+    <Telerik.WinControls.UI.RadSplitContainer IsCleanUpTarget="True" Orientation="Vertical" Padding="5, 5, 5, 5" ThemeName="Office2010Silver" CausesValidation="False" BackColor="ControlLightLight" Location="0, 0" Name="radSplitContainer1" RightToLeft="No" Size="1896, 776" TabIndex="0" TabStop="False">
+      <SizeInfo SplitterCorrection="0, 10" AutoSizeScale="0, 0" AbsoluteSize="200, 321" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.DocumentContainer IsMainDocumentContainer="True" Padding="0, 0, 0, 0" SplitterWidth="3" Orientation="Vertical" ThemeName="Office2010Silver" CausesValidation="False" BackColor="ControlLightLight" Name="documentContainer1">
+          <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" SizeMode="Fill" />
+          <Controls>
+            <Telerik.WinControls.UI.Docking.DocumentTabStrip BackColor="ControlLightLight" SelectedIndex="0" CanUpdateChildIndex="True" Size="1896, 776" Location="0, 0" ThemeName="Office2010Silver" CausesValidation="False" Name="documentTabStrip1" TabIndex="0" TabStop="False">
+              <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+              <Controls>
+                <Telerik.WinControls.UI.Docking.DocumentWindow PreviousDockState="TabbedDocument" Name="documentWindow1" Size="1884, 743" Location="6, 27" Text="Document" />
+              </Controls>
+            </Telerik.WinControls.UI.Docking.DocumentTabStrip>
+          </Controls>
+        </Telerik.WinControls.UI.Docking.DocumentContainer>
+        <Telerik.WinControls.UI.Docking.ToolTabStrip BackColor="ControlLightLight" SelectedIndex="0" CanUpdateChildIndex="True" Size="200, 573" Location="1493, 0" ThemeName="Office2010Silver" Name="toolTabStrip1" TabIndex="1" TabStop="False">
+          <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+          <Controls>
+            <Telerik.WinControls.UI.Docking.ToolWindow Caption="" PreviousDockState="Docked" Name="DocumentWindow" Size="191, 940" Location="7, 27" Text="Document" />
+          </Controls>
+        </Telerik.WinControls.UI.Docking.ToolTabStrip>
+        <Telerik.WinControls.UI.Docking.ToolTabStrip BackColor="ControlLightLight" SelectedIndex="0" CanUpdateChildIndex="True" Size="200, 573" Location="1696, 0" ThemeName="Office2010Silver" Name="toolTabStrip2" TabIndex="2" TabStop="False">
+          <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+          <Controls>
+            <Telerik.WinControls.UI.Docking.ToolWindow Caption="" PreviousDockState="Docked" Name="MapWindow" Size="191, 940" Location="7, 27" Text="Map" />
+          </Controls>
+        </Telerik.WinControls.UI.Docking.ToolTabStrip>
+      </Controls>
+    </Telerik.WinControls.UI.RadSplitContainer>
+    <Telerik.WinControls.UI.Docking.ToolTabStrip BackColor="ControlLightLight" SelectedIndex="0" CanUpdateChildIndex="True" Size="1896, 190" Location="0, 779" ThemeName="Office2010Silver" CausesValidation="False" Name="toolTabStrip3" RightToLeft="No" TabIndex="1" TabStop="False">
+      <SizeInfo SplitterCorrection="0, -10" AutoSizeScale="0, 0" AbsoluteSize="200, 190" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.ToolWindow Caption="" PreviousDockState="Docked" Name="ConsoleWindow" Size="1894, 165" Location="1, 23" Text="Console" />
+      </Controls>
+    </Telerik.WinControls.UI.Docking.ToolTabStrip>
+    <Telerik.WinControls.UI.Docking.ToolTabStrip BackColor="ControlLightLight" SelectedIndex="0" CanUpdateChildIndex="True" Size="1896, 200" Location="0, 769" ThemeName="Office2010Silver" Name="toolTabStrip4" RightToLeft="No" TabIndex="2" TabStop="False">
+      <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.ToolWindow Caption="" PreviousDockState="Docked" Name="errorsWindow" Size="191, 940" Location="7, 27" Text="Errors" />
+      </Controls>
+    </Telerik.WinControls.UI.Docking.ToolTabStrip>
+  </Controls>
+</RadDock>

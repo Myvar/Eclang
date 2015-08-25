@@ -1,0 +1,5 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin.Builder\obj\Debug\Addin.Builder.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin.Builder\obj\Debug\Addin.Builder.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin.Builder\obj\Debug\Addin.Builder.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\Addin.Builder.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\Addin.Builder.pdb

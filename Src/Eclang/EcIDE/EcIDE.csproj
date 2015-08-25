@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC484562-C7B8-4F79-A456-CCCC56ED2E5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EcIDE</RootNamespace>
+    <AssemblyName>EcIDE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EcIDE.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>EClang-logo-icon-largefilesize.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\..\..\..\Desktop\FastColoredTextBox-master\FastColoredTextBox-master\Binary\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="NetComm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Libs\NetComm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Libs\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <HintPath>..\..\..\..\..\Desktop\Libs\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <HintPath>F:\Users\Emile\ASm\PlusOffice (2)\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <HintPath>..\..\..\..\..\Desktop\Libs\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Libs\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2010\Projects\PlussOffice\plusoffice\PlusOffice\lib\RCWF\2013.3.1016.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="updateSystemDotNet.Controller">
+      <HintPath>..\..\..\..\..\Desktop\Libs\updateSystemDotNet.Controller.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Internals\Console\ControlWriter.cs" />
+    <Compile Include="Internals\Database\Api\CascadeDeleteAttribute.cs" />
+    <Compile Include="Internals\Database\Api\IDatabaseId.cs" />
+    <Compile Include="Internals\Database\Api\IExternalOID.cs" />
+    <Compile Include="Internals\Database\Api\IIndexManager.cs" />
+    <Compile Include="Internals\Database\Api\IObjectRepresentation.cs" />
+    <Compile Include="Internals\Database\Api\IObjectSet.cs" />
+    <Compile Include="Internals\Database\Api\IObjectValues.cs" />
+    <Compile Include="Internals\Database\Api\IOdb.cs" />
+    <Compile Include="Internals\Database\Api\IOdbComparable.cs" />
+    <Compile Include="Internals\Database\Api\IOdbExt.cs" />
+    <Compile Include="Internals\Database\Api\IOdbForTrigger.cs" />
+    <Compile Include="Internals\Database\Api\IRefactorManager.cs" />
+    <Compile Include="Internals\Database\Api\IValues.cs" />
+    <Compile Include="Internals\Database\Api\NonPersistentAttribute.cs" />
+    <Compile Include="Internals\Database\Api\OdbConfiguration.cs" />
+    <Compile Include="Internals\Database\Api\OID.cs" />
+    <Compile Include="Internals\Database\Api\OIDAttribute.cs" />
+    <Compile Include="Internals\Database\Api\OrderByConstants.cs" />
+    <Compile Include="Internals\Database\Api\Query\IConstraint.cs" />
+    <Compile Include="Internals\Database\Api\Query\ILinqQueryable.cs" />
+    <Compile Include="Internals\Database\Api\Query\ILinqQueryInternal.cs" />
+    <Compile Include="Internals\Database\Api\Query\IQuery.cs" />
+    <Compile Include="Internals\Database\Api\Query\IValuesQuery.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\DeleteTrigger.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\EnrichWithOidTrigger.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\InsertTrigger.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\ITriggerManager.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\SelectTrigger.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\Trigger.cs" />
+    <Compile Include="Internals\Database\Api\Triggers\UpdateTrigger.cs" />
+    <Compile Include="Internals\Database\Btree\AbstractBTree.cs" />
+    <Compile Include="Internals\Database\Btree\AbstractBTreeIterator.cs" />
+    <Compile Include="Internals\Database\Btree\AbstractBTreeNode.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeIteratorMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeIteratorSingleValuePerKey.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeNodeMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeNodeSingleValuePerKey.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeSingleValuePerKey.cs" />
+    <Compile Include="Internals\Database\Btree\BTreeValidator.cs" />
+    <Compile Include="Internals\Database\Btree\IBTree.cs" />
+    <Compile Include="Internals\Database\Btree\IBTreeMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\IBTreeNode.cs" />
+    <Compile Include="Internals\Database\Btree\IBTreeNodeMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\IBTreeNodeOneValuePerKey.cs" />
+    <Compile Include="Internals\Database\Btree\IBTreePersister.cs" />
+    <Compile Include="Internals\Database\Btree\IBTreeSingleValuePerKey.cs" />
+    <Compile Include="Internals\Database\Btree\IKeyAndValue.cs" />
+    <Compile Include="Internals\Database\Btree\InMemoryBTreeMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\InMemoryBTreeNodeMultipleValuesPerKey.cs" />
+    <Compile Include="Internals\Database\Btree\InMemoryPersister.cs" />
+    <Compile Include="Internals\Database\Btree\IterarorAdapter.cs" />
+    <Compile Include="Internals\Database\Btree\KeyAndValue.cs" />
+    <Compile Include="Internals\Database\Btree\ODBBTreeMultiple.cs" />
+    <Compile Include="Internals\Database\Btree\ODBBTreeNodeMultiple.cs" />
+    <Compile Include="Internals\Database\Btree\ODBBTreeNodeSingle.cs" />
+    <Compile Include="Internals\Database\Btree\ODBBTreeSingle.cs" />
+    <Compile Include="Internals\Database\Cache\IOdbCache.cs" />
+    <Compile Include="Internals\Database\Cache\IReadObjectsCache.cs" />
+    <Compile Include="Internals\Database\Cache\OdbCache.cs" />
+    <Compile Include="Internals\Database\Cache\ReadObjectsCache.cs" />
+    <Compile Include="Internals\Database\Container\DependencyContainer.cs" />
+    <Compile Include="Internals\Database\Core\BTree\IndexManager.cs" />
+    <Compile Include="Internals\Database\Core\BTree\LazyODBBTreeIteratorMultiple.cs" />
+    <Compile Include="Internals\Database\Core\BTree\LazyODBBTreePersister.cs" />
+    <Compile Include="Internals\Database\Core\Engine\AbstractStorageEngineReader.cs" />
+    <Compile Include="Internals\Database\Core\Engine\ByteArrayConverter.cs" />
+    <Compile Include="Internals\Database\Core\Engine\FileSystemInterface.cs" />
+    <Compile Include="Internals\Database\Core\Engine\FileSystemReader.cs" />
+    <Compile Include="Internals\Database\Core\Engine\FileSystemWriter.cs" />
+    <Compile Include="Internals\Database\Core\Engine\IdManager.cs" />
+    <Compile Include="Internals\Database\Core\Engine\IFileSystemReader.cs" />
+    <Compile Include="Internals\Database\Core\Engine\INonNativeObjectWriter.cs" />
+    <Compile Include="Internals\Database\Core\Engine\InstanceBuilder.cs" />
+    <Compile Include="Internals\Database\Core\Engine\InternalTriggerManager.cs" />
+    <Compile Include="Internals\Database\Core\Engine\NonNativeObjectWriter.cs" />
+    <Compile Include="Internals\Database\Core\Engine\ObjectReader.cs" />
+    <Compile Include="Internals\Database\Core\Engine\ObjectWriter.cs" />
+    <Compile Include="Internals\Database\Core\Engine\PendingReading.cs" />
+    <Compile Include="Internals\Database\Core\Engine\StorageEngine.cs" />
+    <Compile Include="Internals\Database\Core\IFileSystemInterface.cs" />
+    <Compile Include="Internals\Database\Core\IFileSystemWriter.cs" />
+    <Compile Include="Internals\Database\Core\IInstanceBuilder.cs" />
+    <Compile Include="Internals\Database\Core\IInternalObjectSet.cs" />
+    <Compile Include="Internals\Database\Core\IInternalValues.cs" />
+    <Compile Include="Internals\Database\Core\IInternalValuesQuery.cs" />
+    <Compile Include="Internals\Database\Core\IMatchingObjectAction.cs" />
+    <Compile Include="Internals\Database\Core\IObjectReader.cs" />
+    <Compile Include="Internals\Database\Core\IObjectWriter.cs" />
+    <Compile Include="Internals\Database\Core\IQueryEngine.cs" />
+    <Compile Include="Internals\Database\Core\IStorageEngine.cs" />
+    <Compile Include="Internals\Database\Core\Query\AbstractQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\AbstractExpression.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\And.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\ComparisonConstraint.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\ComposedExpression.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\CriteriaQueryExecutionPlan.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\CriteriaQueryExecutor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\EmptyConstraint.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\AEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\CollectionSizeEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\ComparisonEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\ContainsEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\EndsWithEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\EqualsEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\IdentityEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\IEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\LikeEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Evaluations\StartsWithEvaluation.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\GenericQueryExecutor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\IInternalConstraint.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Not.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\Or.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\QueryConstraint.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\QueryResultAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Criteria\SodaQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\Execution\IMultiClassQueryExecutor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Execution\IQueryFieldAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Execution\MultiClassGenericQueryExecutor.cs" />
+    <Compile Include="Internals\Database\Core\Query\IInternalQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\IQueryExecutionPlan.cs" />
+    <Compile Include="Internals\Database\Core\Query\IQueryExecutor.cs" />
+    <Compile Include="Internals\Database\Core\Query\IQueryManager.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\ExpressionQueryBuilder.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\ExpressionTransformer.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\ExpressionTreeNormalizer.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\ExpressionVisitor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\LinqQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\LinqQueryable.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\LinqQueryExtensions.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\LinqQueryTranslator.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\OptimizeableMethodConstrains.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\OrderByAscendingClauseVisitor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\OrderByClauseVisitorBase.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\OrderByDescendingClauseVisitor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\PlaceHolderQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\QueryBuilderContext.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\QueryBuilderRecorder.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\ReflectionMethodAnalyser.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\SubtreeEvaluator.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\TypeSystem.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\UnoptimizedQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\Linq\WhereClauseVisitor.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\AbstractBTreeCollection.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\InMemoryBTreeCollection.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\InMemoryBTreeCollectionForValues.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\LazyBTreeCollection.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\LazySimpleListFromOid.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\LazySimpleListOfAOI.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\ObjectValues.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\SimpleList.cs" />
+    <Compile Include="Internals\Database\Core\Query\List\SimpleListForValues.cs" />
+    <Compile Include="Internals\Database\Core\Query\QueryManager.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\AbstractQueryFieldAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\AverageValueAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\CountAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\FieldValueAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\GroupByValuesQueryResultAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\MaxValueAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\MinValueAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\SizeAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\SublistAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\SumAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\ValuesCriteriaQuery.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\ValuesCriteriaQueryExecutor.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\ValuesQueryResultAction.cs" />
+    <Compile Include="Internals\Database\Core\Query\Values\ValuesUtil.cs" />
+    <Compile Include="Internals\Database\Core\RefactorManager.cs" />
+    <Compile Include="Internals\Database\Core\Session\ISession.cs" />
+    <Compile Include="Internals\Database\Core\Session\ITransaction.cs" />
+    <Compile Include="Internals\Database\Core\Session\SessionDataProvider.cs" />
+    <Compile Include="Internals\Database\Exceptions\BTreeError.cs" />
+    <Compile Include="Internals\Database\Exceptions\BTreeException.cs" />
+    <Compile Include="Internals\Database\Exceptions\BTreeNodeValidationException.cs" />
+    <Compile Include="Internals\Database\Exceptions\CorruptedDatabaseException.cs" />
+    <Compile Include="Internals\Database\Exceptions\DuplicatedKeyException.cs" />
+    <Compile Include="Internals\Database\Exceptions\ExceptionsHelper.cs" />
+    <Compile Include="Internals\Database\Exceptions\IError.cs" />
+    <Compile Include="Internals\Database\Exceptions\LinqQueryException.cs" />
+    <Compile Include="Internals\Database\Exceptions\NDatabaseError.cs" />
+    <Compile Include="Internals\Database\Exceptions\ODBRuntimeException.cs" />
+    <Compile Include="Internals\Database\ILogger.cs" />
+    <Compile Include="Internals\Database\Indexing\ComposedCompareKey.cs" />
+    <Compile Include="Internals\Database\Indexing\IndexTool.cs" />
+    <Compile Include="Internals\Database\Indexing\SimpleCompareKey.cs" />
+    <Compile Include="Internals\Database\IO\FileIdentification.cs" />
+    <Compile Include="Internals\Database\IO\IDbIdentification.cs" />
+    <Compile Include="Internals\Database\IO\IMultiBuffer.cs" />
+    <Compile Include="Internals\Database\IO\IMultiBufferedFileIO.cs" />
+    <Compile Include="Internals\Database\IO\InMemoryIdentification.cs" />
+    <Compile Include="Internals\Database\IO\INonBufferedFileIO.cs" />
+    <Compile Include="Internals\Database\IO\IOdbStream.cs" />
+    <Compile Include="Internals\Database\IO\MultiBuffer.cs" />
+    <Compile Include="Internals\Database\IO\MultiBufferedFileIO.cs" />
+    <Compile Include="Internals\Database\IO\NonBufferedFileIO.cs" />
+    <Compile Include="Internals\Database\IO\OdbDirectory.cs" />
+    <Compile Include="Internals\Database\IO\OdbFileManager.cs" />
+    <Compile Include="Internals\Database\IO\OdbFileStream.cs" />
+    <Compile Include="Internals\Database\IO\OdbMemoryStream.cs" />
+    <Compile Include="Internals\Database\Meta\AbstractObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\ArrayObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\AtomicNativeObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\AttributesCache.cs" />
+    <Compile Include="Internals\Database\Meta\AttributeValuesMap.cs" />
+    <Compile Include="Internals\Database\Meta\CIZoneInfo.cs" />
+    <Compile Include="Internals\Database\Meta\ClassAttributeInfo.cs" />
+    <Compile Include="Internals\Database\Meta\ClassInfo.cs" />
+    <Compile Include="Internals\Database\Meta\ClassInfoCompareResult.cs" />
+    <Compile Include="Internals\Database\Meta\ClassInfoIndex.cs" />
+    <Compile Include="Internals\Database\Meta\ClassInfoList.cs" />
+    <Compile Include="Internals\Database\Meta\CommittedCIZoneInfo.cs" />
+    <Compile Include="Internals\Database\Meta\Compare\AttributeValueComparator.cs" />
+    <Compile Include="Internals\Database\Meta\Compare\ChangedObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\Compare\IObjectInfoComparator.cs" />
+    <Compile Include="Internals\Database\Meta\Compare\ObjectInfoComparator.cs" />
+    <Compile Include="Internals\Database\Meta\EnumNativeObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\IClassInfoProvider.cs" />
+    <Compile Include="Internals\Database\Meta\IDTypes.cs" />
+    <Compile Include="Internals\Database\Meta\IMetaModel.cs" />
+    <Compile Include="Internals\Database\Meta\Introspector\ClassIntrospector.cs" />
+    <Compile Include="Internals\Database\Meta\Introspector\DefaultInstrumentationCallback.cs" />
+    <Compile Include="Internals\Database\Meta\Introspector\IIntrospectionCallback.cs" />
+    <Compile Include="Internals\Database\Meta\Introspector\IObjectIntrospectionDataProvider.cs" />
+    <Compile Include="Internals\Database\Meta\Introspector\IObjectIntrospector.cs" />
+    <Compile Include="Internals\Database\Meta\Introspector\ObjectIntrospector.cs" />
+    <Compile Include="Internals\Database\Meta\MetaModel.cs" />
+    <Compile Include="Internals\Database\Meta\MetaModelCompabilityChecker.cs" />
+    <Compile Include="Internals\Database\Meta\NativeAttributeHeader.cs" />
+    <Compile Include="Internals\Database\Meta\NativeObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\NonNativeDeletedObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\NonNativeNullObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\NonNativeObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\NullNativeObjectInfo.cs" />
+    <Compile Include="Internals\Database\Meta\ObjectInfoHeader.cs" />
+    <Compile Include="Internals\Database\Meta\ObjectReference.cs" />
+    <Compile Include="Internals\Database\Meta\OdbClassNameResolver.cs" />
+    <Compile Include="Internals\Database\Meta\ODBType.cs" />
+    <Compile Include="Internals\Database\Meta\OidInfo.cs" />
+    <Compile Include="Internals\Database\Meta\StorageEngineConstant.cs" />
+    <Compile Include="Internals\Database\Odb.cs" />
+    <Compile Include="Internals\Database\OdbExt.cs" />
+    <Compile Include="Internals\Database\OdbFactory.cs" />
+    <Compile Include="Internals\Database\OIDFactory.cs" />
+    <Compile Include="Internals\Database\Oid\BaseOID.cs" />
+    <Compile Include="Internals\Database\Oid\ClassOID.cs" />
+    <Compile Include="Internals\Database\Oid\DatabaseId.cs" />
+    <Compile Include="Internals\Database\Oid\ExternalObjectOID.cs" />
+    <Compile Include="Internals\Database\Oid\IIdManager.cs" />
+    <Compile Include="Internals\Database\Oid\ObjectOID.cs" />
+    <Compile Include="Internals\Database\Reflection\ByteBuffer.cs" />
+    <Compile Include="Internals\Database\Reflection\ILPattern.cs" />
+    <Compile Include="Internals\Database\Reflection\Instruction.cs" />
+    <Compile Include="Internals\Database\Reflection\MatchContext.cs" />
+    <Compile Include="Internals\Database\Reflection\MethodBodyReader.cs" />
+    <Compile Include="Internals\Database\Services\ICommitListener.cs" />
+    <Compile Include="Internals\Database\Services\IMetaModelCompabilityChecker.cs" />
+    <Compile Include="Internals\Database\Services\IMetaModelService.cs" />
+    <Compile Include="Internals\Database\Services\IReflectionService.cs" />
+    <Compile Include="Internals\Database\Services\ReflectionService.cs" />
+    <Compile Include="Internals\Database\Storage\BlockStatus.cs" />
+    <Compile Include="Internals\Database\Storage\BlockTypes.cs" />
+    <Compile Include="Internals\Database\Storage\CurrentIdBlockInfo.cs" />
+    <Compile Include="Internals\Database\Storage\IdInfo.cs" />
+    <Compile Include="Internals\Database\Storage\IDStatus.cs" />
+    <Compile Include="Internals\Database\Tool\DictionaryExtensions.cs" />
+    <Compile Include="Internals\Database\Tool\DLogger.cs" />
+    <Compile Include="Internals\Database\Tool\ListExtensions.cs" />
+    <Compile Include="Internals\Database\Tool\UniqueIdGenerator.cs" />
+    <Compile Include="Internals\Database\Tool\Wrappers\IOdbList.cs" />
+    <Compile Include="Internals\Database\Tool\Wrappers\OdbHashMap2.cs" />
+    <Compile Include="Internals\Database\Tool\Wrappers\OdbList.cs" />
+    <Compile Include="Internals\Database\Tool\Wrappers\OdbRandom.cs" />
+    <Compile Include="Internals\Database\Tool\Wrappers\OdbString.cs" />
+    <Compile Include="Internals\Database\Tool\Wrappers\OdbTime.cs" />
+    <Compile Include="Internals\Database\Transaction\LocalSession.cs" />
+    <Compile Include="Internals\Database\Transaction\OdbTransaction.cs" />
+    <Compile Include="Internals\Database\Transaction\Session.cs" />
+    <Compile Include="Internals\Database\Transaction\WriteAction.cs" />
+    <Compile Include="Internals\Database\Triggers\IInternalTriggerManager.cs" />
+    <Compile Include="Internals\Database\Triggers\InstrumentationCallbackForStore.cs" />
+    <Compile Include="Internals\Database\Triggers\ITriggersEngine.cs" />
+    <Compile Include="Internals\Database\Triggers\ObjectRepresentation.cs" />
+    <Compile Include="Internals\Database\Triggers\TriggerManager.cs" />
+    <Compile Include="Internals\Database\TypeResolution\CachedTypeResolver.cs" />
+    <Compile Include="Internals\Database\TypeResolution\GenericArgumentsHolder.cs" />
+    <Compile Include="Internals\Database\TypeResolution\GenericTypeResolver.cs" />
+    <Compile Include="Internals\Database\TypeResolution\ITypeResolver.cs" />
+    <Compile Include="Internals\Database\TypeResolution\TypeAssemblyHolder.cs" />
+    <Compile Include="Internals\Database\TypeResolution\TypeRegistry.cs" />
+    <Compile Include="Internals\Database\TypeResolution\TypeResolutionUtils.cs" />
+    <Compile Include="Internals\Database\TypeResolution\TypeResolver.cs" />
+    <Compile Include="Internals\Exe\Compiler.cs" />
+    <Compile Include="Internals\IntellisenseManager.cs" />
+    <Compile Include="Internals\LicenceEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\LicenceEdit.designer.cs">
+      <DependentUpon>LicenceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internals\InfoManager.cs" />
+    <Compile Include="Internals\MenuBinder.cs" />
+    <Compile Include="Internals\StyleManager.cs" />
+    <Compile Include="Internals\UI\ShellControl\CommandHistory.cs" />
+    <Compile Include="Internals\UI\Properties\PropertyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Properties\TabBrushes.cs" />
+    <Compile Include="Internals\UI\Properties\TabItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Properties\TabItemCollection.cs" />
+    <Compile Include="Internals\UI\Properties\TabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Properties\TabPageContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Properties\TabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\ShellControl\ShellControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\ShellControl\ShellTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\StartPageCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\StartPageCtrl.Designer.cs">
+      <DependentUpon>StartPageCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internals\UI\UIControls\UIElement.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodes\textbox.cs" />
+    <Compile Include="Nodes\separator.cs" />
+    <Compile Include="Nodes\menuitem.cs" />
+    <Compile Include="Nodes\window.cs" />
+    <Compile Include="Internals\Project\ProjectFile.cs" />
+    <Compile Include="Internals\UI\LicenseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\LicenseDialog.designer.cs">
+      <DependentUpon>LicenseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internals\SKGL.cs" />
+    <Compile Include="Internals\Console\TextBoxReader.cs" />
+    <Compile Include="Internals\UI\CodeMap\Map.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\CodeMap\Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internals\UI\CodeMap\Parser\DecParser.cs" />
+    <Compile Include="Internals\MethodAutocompleteItem2.cs" />
+    <Compile Include="Internals\UI\CodeMap\Parser\DefParser.cs" />
+    <Compile Include="OptionPages\General.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OptionPages\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Internals\UI\NotificationPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\NotificationPopup.Designer.cs">
+      <DependentUpon>NotificationPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internals\UI\StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internals\UI\Wizard\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Wizard\HeaderDesigner.cs" />
+    <Compile Include="Internals\UI\Wizard\InfoContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Wizard\InfoContainerDesigner.cs" />
+    <Compile Include="Internals\UI\Wizard\InfoPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Wizard\InfoPageDesigner.cs" />
+    <Compile Include="Internals\UI\Wizard\PageCollection.cs" />
+    <Compile Include="Internals\UI\Wizard\PageEventHandler.cs" />
+    <Compile Include="Internals\UI\Wizard\Wizard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Wizard\WizardDesigner.cs" />
+    <Compile Include="Internals\UI\Wizard\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Internals\UI\Wizard\WizardPageDesigner.cs" />
+    <Compile Include="PropertyPages\GeneralPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\GeneralPage.Designer.cs">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Internals\LicenceEdit.resx">
+      <DependentUpon>LicenceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\Properties\PropertyControl.resx">
+      <DependentUpon>PropertyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\ShellControl\ShellControl.resx">
+      <DependentUpon>ShellControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\ShellControl\ShellTextBox.resx">
+      <DependentUpon>ShellTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\StartPageCtrl.resx">
+      <DependentUpon>StartPageCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\LicenseDialog.resx">
+      <DependentUpon>LicenseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\CodeMap\Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionPages\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Internals\UI\NotificationPopup.resx">
+      <DependentUpon>NotificationPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\Wizard\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\Wizard\InfoContainer.resx">
+      <DependentUpon>InfoContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\Wizard\InfoPage.resx">
+      <DependentUpon>InfoPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internals\UI\Wizard\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\GeneralPage.resx">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Internals\Database\Meta\ODBType.cs.orig" />
+    <None Include="Internals\Database\obj\Debug\Creek.Database.csprojResolveAssemblyReference.cache" />
+    <None Include="Internals\Database\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Internals\Database\obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EcIDE.Addins\EcIDE.Addins.csproj">
+      <Project>{A7155C68-6A6E-445E-B81E-4B75D1A7B9C0}</Project>
+      <Name>EcIDE.Addins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EcIDE.Contracts\EcIDE.Contracts.csproj">
+      <Project>{4275fb63-3dd6-4bff-b5f7-b6d833f4552a}</Project>
+      <Name>EcIDE.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ECLang\ECLang.csproj">
+      <Project>{F818C99D-922D-49D9-96FA-E40C48231467}</Project>
+      <Name>ECLang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grammar.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VSObject_Method.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Properties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Properties2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_edit_paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EClang-logo-icon-largefilesize.ico" />
+    <Content Include="Internals\Database\obj\Debug\Creek.Database.csproj.FileListAbsolute.txt" />
+    <Content Include="Internals\Database\obj\Debug\Creek.Database.dll" />
+    <Content Include="Internals\Database\obj\Debug\Creek.Database.pdb" />
+    <Content Include="Internals\Database\obj\Debug\Creek.IO.Database.csproj.FileListAbsolute.txt" />
+    <Content Include="Internals\Database\obj\Debug\Creek.IO.Database.dll" />
+    <Content Include="Internals\Database\obj\Debug\Creek.IO.Database.pdb" />
+    <Content Include="Internals\Database\obj\Release\Creek.Database.csproj.FileListAbsolute.txt" />
+    <Content Include="Internals\Database\obj\Release\Creek.Database.dll" />
+    <Content Include="Internals\Database\obj\Release\Creek.Database.pdb" />
+    <Content Include="Internals\Exe\BootStrapCode.txt" />
+    <Content Include="References\FastColoredTextBox.dll" />
+    <Content Include="References\log4net.dll" />
+    <Content Include="References\NetComm.dll" />
+    <Content Include="References\SharpHsql.dll" />
+    <Content Include="References\Telerik.WinControls.dll" />
+    <Content Include="References\Telerik.WinControls.RadDock.dll" />
+    <Content Include="References\Telerik.WinControls.Themes.Office2010Blue.dll" />
+    <Content Include="References\Telerik.WinControls.Themes.Office2010Silver.dll" />
+    <Content Include="References\Telerik.WinControls.Themes.Office2013Light.dll" />
+    <Content Include="References\Telerik.WinControls.UI.dll" />
+    <Content Include="References\TelerikCommon.dll" />
+    <Content Include="References\updateSystemDotNet.Controller.dll" />
+    <Content Include="script.ico" />
+    <Content Include="Internals\UI\Wizard\Wizard.bmp" />
+    <Content Include="Internals\UI\Wizard\wizBigOnlineFolder.gif" />
+    <None Include="Resources\notifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Internals\Database\obj\Debug\TempPE\" />
+    <Folder Include="Internals\Database\obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

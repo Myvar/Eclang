@@ -1,0 +1,3 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TestAddin\obj\Debug\TestAddin.manifest.xml
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\addins\TestAddin.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TestAddin\obj\Debug\TestAddin.dll

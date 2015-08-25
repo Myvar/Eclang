@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F818C99D-922D-49D9-96FA-E40C48231467}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECLang</RootNamespace>
+    <AssemblyName>ECLang</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\EcIDE\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SharpHsql">
+      <HintPath>..\EcIDE\References\SharpHsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnumerationExtensions.cs" />
+    <Compile Include="Framework\Math\MathParser.cs" />
+    <Compile Include="Framework\Eto.Parse\FluentExtensions.cs" />
+    <Compile Include="Framework\Eto.Parse\Grammar.cs" />
+    <Compile Include="Framework\Eto.Parse\GrammarMatch.cs" />
+    <Compile Include="Framework\Eto.Parse\Grammars\BnfGrammar.cs" />
+    <Compile Include="Framework\Eto.Parse\Grammars\EbnfGrammar.cs" />
+    <Compile Include="Framework\Eto.Parse\Grammars\GoldDefinition.cs" />
+    <Compile Include="Framework\Eto.Parse\Grammars\GoldGrammar.cs" />
+    <Compile Include="Framework\Eto.Parse\InternalExtensions.cs" />
+    <Compile Include="Framework\Eto.Parse\InverseParser.cs" />
+    <Compile Include="Framework\Eto.Parse\ISeparatedParser.cs" />
+    <Compile Include="Framework\Eto.Parse\ListParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Match.cs" />
+    <Compile Include="Framework\Eto.Parse\ParseArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\Parser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parser.operators.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserChain.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserChildrenArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserCloneArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserContainsArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserFindArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserInitializeArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\AlternativeParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\AnyCharTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\AnySurrogatePairTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\BooleanTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\CharRangeTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\CharSetTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\CharTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\ControlTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\DigitTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\EmptyParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\EndParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\EolTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\ExceptParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\GroupParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\HexDigitTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\LetterOrDigitTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\LetterTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\LiteralTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\LookAheadParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\NumberParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\OptionalParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\PunctuationTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\RepeatCharTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\RepeatParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SequenceParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SingleCharTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SingleLineWhiteSpaceTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SingleSurrogatePairTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\StartParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\StringParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SurrogatePairRangeTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SurrogatePairTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\SymbolTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\UntilParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Parsers\WhiteSpaceTerminal.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\ParserWriterArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\Scanner.cs" />
+    <Compile Include="Framework\Eto.Parse\Scanners\StringScanner.cs" />
+    <Compile Include="Framework\Eto.Parse\SlimStack.cs" />
+    <Compile Include="Framework\Eto.Parse\Terminals.cs" />
+    <Compile Include="Framework\Eto.Parse\TextParserWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\TextParserWriterArgs.cs" />
+    <Compile Include="Framework\Eto.Parse\UnaryParser.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\CodeParserWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\BooleanWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\CharRangeWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\CharSetWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\CharWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\ExceptWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\GrammarWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\GroupWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\InverseWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\ListWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\LiteralWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\NumberWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\ParserWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\RepeatWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\SequenceWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\SingleCharWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\StringWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Code\UnaryWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\DisplayParserWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Display\ListWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Display\LiteralWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Display\ParserWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Display\RepeatWriter.cs" />
+    <Compile Include="Framework\Eto.Parse\Writers\Display\UnaryWriter.cs" />
+    <Compile Include="Framework\Program.cs" />
+    <Compile Include="Framework\sql.cs" />
+    <Compile Include="Framework\WindowBuilder.cs" />
+    <Compile Include="GrammarBuilder.cs" />
+    <Compile Include="Internal\AST\Statements\AttributeStmt.cs" />
+    <Compile Include="Internal\AST\Statements\DelStmt.cs" />
+    <Compile Include="Internal\AST\Statements\ForEachStmt.cs" />
+    <Compile Include="Internal\AST\Statements\ImportStmt.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Internal\AST\Expression.cs" />
+    <Compile Include="Internal\AST\Grammar.cs" />
+    <Compile Include="Internal\AST\IAst.cs" />
+    <Compile Include="Internal\AST\MultilineStatement.cs" />
+    <Compile Include="Internal\AST\RegexPattern.cs" />
+    <Compile Include="Internal\AST\RegexPatterns.cs" />
+    <Compile Include="Internal\AST\Statement.cs" />
+    <Compile Include="Internal\AST\Statements\CallStmt.cs" />
+    <Compile Include="Internal\AST\Statements\CommentStmt.cs" />
+    <Compile Include="Internal\AST\Statements\ForStmt.cs" />
+    <Compile Include="Internal\AST\Statements\IfStmt.cs" />
+    <Compile Include="Internal\AST\Statements\DeIncreaseStmt.cs" />
+    <Compile Include="Internal\AST\Statements\SwitchStmt.cs" />
+    <Compile Include="Internal\AST\Statements\ModeStmt.cs" />
+    <Compile Include="Internal\AST\Statements\ThrowStmt.cs" />
+    <Compile Include="Internal\AST\Statements\TryCatchStmt.cs" />
+    <Compile Include="Internal\AST\Statements\ObjCallStmt.cs" />
+    <Compile Include="Internal\AST\Statements\DecSetStmt.cs" />
+    <Compile Include="Internal\AST\Statements\DecStmt.cs" />
+    <Compile Include="Internal\AST\Statements\StatmentVarHandler.cs" />
+    <Compile Include="Internal\AST\Statements\WhileStmt.cs" />
+    <Compile Include="Internal\Attributes\AttributeManager.cs" />
+    <Compile Include="Internal\Attributes\Base\Attribute.cs" />
+    <Compile Include="Internal\Binary\IModule.cs" />
+    <Compile Include="Internal\Binary\Modules\ResourcesModule.cs" />
+    <Compile Include="Internal\Binary\Modules\FilesystemModule.cs" />
+    <Compile Include="Internal\Binary\Reader.cs" />
+    <Compile Include="Internal\Binary\Writer.cs" />
+    <Compile Include="Internal\Brainfuck.cs" />
+    <Compile Include="Internal\CodeBlock.cs" />
+    <Compile Include="Internal\DelegateBuilder.cs" />
+    <Compile Include="Internal\EcCustomClass.cs" />
+    <Compile Include="Internal\EcFileFormat.cs" />
+    <Compile Include="Internal\MathParser.cs" />
+    <Compile Include="Internal\MathsExspretionHandler.cs" />
+    <Compile Include="Internal\Operator.cs" />
+    <Compile Include="Internal\OperatorCollection.cs" />
+    <Compile Include="Internal\Operators.cs" />
+    <Compile Include="Internal\PrimitivesManager.cs" />
+    <Compile Include="Internal\Primitives\Base\Primitive.cs" />
+    <Compile Include="Internal\Primitives\EcArray.cs" />
+    <Compile Include="Internal\Primitives\EcBool.cs" />
+    <Compile Include="Internal\Primitives\EcExpression.cs" />
+    <Compile Include="Internal\Primitives\EcNumber.cs" />
+    <Compile Include="Internal\Primitives\EcObject.cs" />
+    <Compile Include="Internal\Primitives\EcLambda.cs" />
+    <Compile Include="Internal\Primitives\EcObjectCallStmt.cs" />
+    <Compile Include="Internal\Primitives\EcRegexp.cs" />
+    <Compile Include="Internal\Primitives\EcString.cs" />
+    <Compile Include="Internal\Primitives\Fuck.cs" />
+    <Compile Include="Internal\Reference.cs" />
+    <Compile Include="Internal\Tables\ErrorTable.cs" />
+    <Compile Include="Internal\Tables\FunctionTable.cs" />
+    <Compile Include="Internal\Method.cs" />
+    <Compile Include="Internal\Tables\SymbolTable.cs" />
+    <Compile Include="Internal\Parser.cs" />
+    <Compile Include="Internal\ThrowObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Internal\ExpressionGrammer.txt" />
+    <Content Include="Internal\Grammar.txt" />
+    <Content Include="TestCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+﻿<addin xmlns="MyvarEcAddin">
+  
+ <meta>
+    <author>Emile Bademhorst</author>
+    <name>MyvarTools</name>
+    <version>0.0.1</version>
+  </meta>
+  
+  <extension path="/EcIDE/StartupCommands">
+    <command class="{namespace}.StartUp" />
+
+    <window close="OnFormClose" />
+  </extension>
+
+  <extension path="/EcIDE/Menu/View">
+    <command class="{namespace}.Menu" />
+    
+    <separator />
+    <menuitem text="DeveloperChat" click="OnClick"  />
+    <textbox textchanged="OnTextChanged" visible="false" />
+  </extension>
+
+  <extension path="/EcIDE/Options">
+    <command class="{namespace}.UI.OptionPage" />
+  </extension>
+  
+</addin>

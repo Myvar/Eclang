@@ -1,0 +1,12 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\EcIDE.Contracts.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\EcIDE.Contracts.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\FastColoredTextBox.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\EcIDE.Addins.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\bin\Debug\EcIDE.Addins.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.UI.Options.OptionsForm.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.UI.Options.OptionsPanel.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Contracts\obj\Debug\EcIDE.Contracts.Properties.Resources.resources

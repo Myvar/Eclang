@@ -1,0 +1,4 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin\bin\Debug\Addin.Installer.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin\bin\Debug\Addin.Installer.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin\obj\Debug\Addin.Installer.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\Addin\obj\Debug\Addin.Installer.pdb

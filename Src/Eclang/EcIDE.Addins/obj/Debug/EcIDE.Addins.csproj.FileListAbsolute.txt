@@ -1,0 +1,5 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Addins\bin\Debug\EcIDE.Addins.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Addins\bin\Debug\EcIDE.Addins.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Addins\obj\Debug\EcIDE.Addins.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Addins\obj\Debug\EcIDE.Addins.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE.Addins\obj\Debug\EcIDE.Addins.csprojResolveAssemblyReference.cache

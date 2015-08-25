@@ -1,0 +1,10 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\bin\Debug\TCPServer.exe.config
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\bin\Debug\TCPServer.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\bin\Debug\TCPServer.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\bin\Debug\NetComm.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\obj\Debug\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\obj\Debug\TCPServer.Form1.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\obj\Debug\TCPServer.Properties.Resources.resources
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\obj\Debug\TCPServer.csproj.GenerateResource.Cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\obj\Debug\TCPServer.exe
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TCPServer\obj\Debug\TCPServer.pdb

@@ -1,0 +1,5 @@
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\addins\TestAddin.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\EcIDE\bin\Debug\addins\TestAddin.pdb
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TestAddin\obj\Debug\TestAddin.csprojResolveAssemblyReference.cache
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TestAddin\obj\Debug\TestAddin.dll
+C:\Users\Emile\Documents\Visual Studio 2013\Projects\Eclang\TestAddin\obj\Debug\TestAddin.pdb
